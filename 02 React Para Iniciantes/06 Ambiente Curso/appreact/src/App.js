@@ -1,9 +1,5 @@
 const App = () => {
-  return (
-    <div>
-      Meu app
-    </div>
-  );
+      return (<a href="https://origamid.com" title="Isto é um site">Origamid</a>);
 }
 
 export default App;
