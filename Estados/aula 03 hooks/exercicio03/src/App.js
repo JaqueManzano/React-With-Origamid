@@ -3,7 +3,7 @@ import Product from './Product'
 
 function App() {
   
-  const [productSelected, setProduct] = useState(null);
+  const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(null);
 
   const handleClick =  async (e)=>{
@@ -25,7 +25,7 @@ function App() {
     </div>
 
     {loading && <p>Carregando...</p>}
-    {!loading && productSelected && <Product product={productSelected} />}
+    {!loading && product && <Product product={product} />}
     </>
   );
 }
