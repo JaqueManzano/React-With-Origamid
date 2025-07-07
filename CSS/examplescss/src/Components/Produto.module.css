@@ -1,0 +1,19 @@
+.titulo{
+    color: #43c;
+    --cor: pink;
+}
+
+
+.preco{
+    composes: titulo;
+    color: var(--cor);
+    font-weight: bold;
+}
+
+.comprar{
+    transform: rotate(90deg) translateY(-120px);
+}
+
+:global .container{
+    max-width: 900px;
+}
