@@ -1,7 +1,14 @@
-import {NavLink} from 'react-router-dom'
+import {NavLink, useLocation} from 'react-router-dom'
 import './Header.css'
-
+import React
+ from 'react';
 const Header = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    console.log('mudou a rota')
+  },[location]);
+
   return (
     <nav>
       <NavLink to="/" end activeStyle={{ color: 'tomato' }}>Home</NavLink> |
