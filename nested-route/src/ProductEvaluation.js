@@ -1,0 +1,11 @@
+const ProductEvaluation = () => {
+  return (
+    <div>
+      <h2>Produto Avaliação</h2>
+    </div>
+  )
+}
+
+export default ProductEvaluation
+
+
